@@ -33,4 +33,4 @@ jobs:
 
       - name: Run remote script on EC2
         run: |
-          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ec2-user@18.236.161.183 'bash -s' < path/to/your/script.sh
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ec2-user@your-ec2-instance-ip 'bash -s' < path/to/your/script.sh
