@@ -23,6 +23,9 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_PRIVATE_KEY }}
           script: |
+            mkdir /home/ubuntu/front
+            cd  /home/ubuntu/front
+            git https://github.com/AymanAhmedOsman/ABI-Frontend.git
             # Add your deployment commands here
             # Example: scp -r ./dist/* user@server:/path/to/deployment/
             # Example: ssh user@server 'bash -s' < deploy.sh
